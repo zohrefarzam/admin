@@ -4,16 +4,16 @@ import { Grid } from "material-ui";
 import { RegularCard, Table, ItemGrid } from "components";
 
 function TableList({ ...props }) {
+  const { classes } = props;
   return (
     <Grid container>
       <ItemGrid xs={12} sm={12} md={12}>
         <RegularCard
-          cardTitle="Simple Table"
-          cardSubtitle="Here is a subtitle for this table"
+          cardTitle="لیست شرکت ها"
           content={
             <Table
               tableHeaderColor="primary"
-              tableHead={["Name", "Country", "City", "Salary"]}
+              tableHead={["شماره", "شرکت", "نماد", "قیمت"]}
               tableData={[
                 ["Dakota Rice", "Niger", "Oud-Turnhout", "$36,738"],
                 ["Minerva Hooper", "Curaçao", "Sinaai-Waas", "$23,789"],
@@ -26,7 +26,7 @@ function TableList({ ...props }) {
           }
         />
       </ItemGrid>
-      <ItemGrid xs={12} sm={12} md={12}>
+     {/* <ItemGrid xs={12} sm={12} md={12}>
         <RegularCard
           plainCard
           cardTitle="Table on Plain Background"
@@ -58,7 +58,10 @@ function TableList({ ...props }) {
             />
           }
         />
-      </ItemGrid>
+        </ItemGrid>*/}
+        <div >
+        <button style={{float:'left',direction:'rtl'}}  >اضافه</button>
+        </div>
     </Grid>
   );
 }

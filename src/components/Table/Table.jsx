@@ -44,6 +44,8 @@ function CustomTable({ ...props }) {
                     </TableCell>
                   );
                 })}
+                <button style={{backgroundColor:'red',color:'white',marginTop:'7%',marginLeft:5,borderRadius:5}}>حذف</button>
+                <button style={{backgroundColor:'green',color:'white',marginTop:'7%',borderRadius:5}}>ویرایش</button>
               </TableRow>
             );
           })}
