@@ -19,24 +19,32 @@ import {
 const dashboardRoutes = [
   {
     path: "/dashboard",
-    sidebarName: "Dashboard",
-    navbarName: "Material Dashboard",
+    sidebarName: "مدیریت شرکت ها و نمادها",
+    navbarName: "مدیریت شرکت ها و نماد ها",
     icon: Dashboard,
-    component: DashboardPage
+    component: TableList
+    
   },
   {
     path: "/user",
-    sidebarName: "User Profile",
-    navbarName: "Profile",
+    sidebarName: "پروفایل کاربری",
+    navbarName: "پروفایل کاربری",
     icon: Person,
     component: UserProfile
   },
   {
+    path: "/notifications",
+    sidebarName: "اعلانات",
+    navbarName: "اعلانات",
+    icon: Notifications,
+    component: NotificationsPage
+  },
+/*{
     path: "/table",
     sidebarName: "Table List",
     navbarName: "Table List",
     icon: ContentPaste,
-    component: TableList
+    component: DashboardPage
   },
   {
     path: "/typography",
@@ -59,13 +67,7 @@ const dashboardRoutes = [
     icon: LocationOn,
     component: Maps
   },
-  {
-    path: "/notifications",
-    sidebarName: "Notifications",
-    navbarName: "Notifications",
-    icon: Notifications,
-    component: NotificationsPage
-  },
+ */
   { redirect: true, path: "/", to: "/dashboard", navbarName: "Redirect" }
 ];
 
